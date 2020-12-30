@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NLPComponent } from './nlp/nlp.component';
+import { ImprocComponent } from './improc/improc.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NLPComponent,
+    ImprocComponent
   ],
   imports: [
     BrowserModule,

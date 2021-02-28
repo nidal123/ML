@@ -1,6 +1,13 @@
 a:link {
   color: white;
   padding-left: 8px;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  padding-left: 8px;
+  text-decoration: none;
 }
 
 .homepage {

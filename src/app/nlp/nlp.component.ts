@@ -12,4 +12,8 @@ export class NLPComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  newQuestion()
+  {
+  }
+
 }

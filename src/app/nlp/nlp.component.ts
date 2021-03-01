@@ -131,11 +131,11 @@ export class NLPComponent implements AfterViewInit {
 
     generateNewInkblotSrc()
     {
-        var newSource = '../../assets/blot' + Math.floor(Math.random() * (10) + 1) + '.png';
+        var newSource = 'assets/blot' + Math.floor(Math.random() * (10) + 1) + '.png';
 
         while (this.imageSource == newSource)
         {
-            newSource = '../../assets/blot' + Math.floor(Math.random() * (10) + 1) + '.png';
+            newSource = 'assets/blot' + Math.floor(Math.random() * (10) + 1) + '.png';
         }
         this.imageSource = newSource;
 

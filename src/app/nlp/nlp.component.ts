@@ -69,51 +69,51 @@ export class NLPComponent implements AfterViewInit {
 
             if (positive > 0.95)
             {
-              this.yourImage = '../../assets/p_o_95.jpg';
+              this.yourImage = 'assets/p_o_95.jpg';
             }
             else if (positive > 0.85)
             {
-              this.yourImage = '../../assets/p_o_85.jpg';
+              this.yourImage = 'assets/p_o_85.jpg';
             }
             else if (positive > 0.70)
             {
-              this.yourImage = '../../assets/p_o_70.jpg';
+              this.yourImage = 'assets/p_o_70.jpg';
             }
             else if (positive > 0.60)
             {
-              this.yourImage = '../../assets/p_o_60.png';
+              this.yourImage = 'assets/p_o_60.png';
             }
             else if (positive > 0.50)
             {
-              this.yourImage = '../../assets/p_o_50.png';
+              this.yourImage = 'assets/p_o_50.png';
             }
             else if (negative > 0.95)
             {
-              this.yourImage = '../../assets/n_o_95.png';
+              this.yourImage = 'assets/n_o_95.png';
             }
             else if (negative > 0.85)
             {
-              this.yourImage = '../../assets/n_o_85.JPG';
+              this.yourImage = 'assets/n_o_85.JPG';
             }
             else if (negative > 0.70)
             {
-              this.yourImage = '../../assets/n_o_70.PNG';
+              this.yourImage = 'assets/n_o_70.PNG';
             }
             else if (negative > 0.60)
             {
-              this.yourImage = '../../assets/n_o_60.jpeg';
+              this.yourImage = 'assets/n_o_60.jpeg';
             }
             else if (negative > 0.50)
             {
-              this.yourImage = '../../assets/n_o_50.jpeg';
+              this.yourImage = 'assets/n_o_50.jpeg';
             }
             else if (positive > negative)
             {
-              this.yourImage = '../../assets/n_p.png';
+              this.yourImage = 'assets/n_p.png';
             }
             else
             {
-              this.yourImage = '../../assets/n_n.jpeg';
+              this.yourImage = 'assets/n_n.jpeg';
             }
 
 

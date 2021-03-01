@@ -1,6 +1,34 @@
-<h1>I will analyze your subconscious and show you how you feel...</h1>
+<h1>The Rorschach Inkblot Test is a projective examination of your psychological state...</h1>
+
+<p *ngIf="started"><br></p>
+
+<button *ngIf="! started" class="button1" (click)="start()" class="button button1">{{startButtonValue}}</button>
+<button *ngIf="started" class="button2" (click)="generateNewInkblotSrc()" class="button button2">New Inkblot</button>
+
+<div *ngIf="started"></div>
+
+<img *ngIf="started" src="{{imageSource}}" alt="A picture of an Inkblot" width="620" height="410">
+
+<p *ngIf="started"><br></p>
 
 
-<button (click)="newQuestion()" class="button button1">fuck</button>
+<p *ngIf="started">Describe how this image makes you feel:</p>
 
-<p>nlp works!</p>
+
+<form *ngIf="started" #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+  <textarea name = "sentiment" placeholder = "how do you feel?" ngModel></textarea>
+  <br/>
+  <input class="button3" type = "submit" value = "submit and wait 4 seconds">
+</form>
+
+<p #cmp style="visibility:hidden;" id="sentiment-response"></p>
+
+<p *ngIf="analysis">This is you:</p>
+
+<img *ngIf="analysis" src="{{yourImage}}" alt="that's you!" width="620" height="410">
+
+<p *ngIf="analysis">{{response}}</p>
+
+<p *ngIf="analysis"><br><br><br><br><br></p>
+
+
